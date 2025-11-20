@@ -87,3 +87,28 @@ def juftmi (son):
       return "bu toq son"
 
 print(juftmi(45))  # natija bu toq son, chunki 2 ga bolinganda qoldiq qoladi
+
+
+# ***************
+
+# sonlarni ichidan eng kattasini topish function
+
+def find_bigger_one(a, b):
+   return  a if a > b else b
+
+
+print(find_bigger_one(2,7))
+
+# matn uzunligin topib beruvchi function
+
+def matn_uzunligi(matn):
+   return len(matn)
+
+print(matn_uzunligi("men dasturchiman"))
+
+# matnni teskari qilib berish uchun function
+
+def teskari_matn(matn):
+   return matn[:: -1]
+
+print(teskari_matn("men"))
