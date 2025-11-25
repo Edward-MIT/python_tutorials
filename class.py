@@ -26,3 +26,42 @@ c = talaba1.get_age(2025)
 print(a)
 print(b)
 print(c)
+
+
+# ikkinchi class
+
+class Fan():
+  """Fan nomli class"""
+  def __init__(self, nomi):
+    self.nomi = nomi
+    self.talabalar_soni = 0
+    self.talabalar = []
+
+  def add_student(self, talaba):
+    """Fanga talabalar qo'shish"""
+    self.talabalar.append(talaba)
+    self.talabalar_soni += 1
+
+  def get_fullname(self):
+    return self.nomi
+
+  def get_students (self):
+    """Fanga yozilgan talabalar haqida ma'lumot"""
+    return [talaba.get_fullname() for talaba in self.talabalar]
+
+
+
+matem = Fan("Matematika")
+print (matem.talabalar)
+
+print(talaba1.name)
+
+matem.add_student(talaba1)
+c = matem.talabalar_soni
+print(c)
+
+talaba2 = Talaba("Usmanov", "Abduqahhor",1998)
+matem.add_student(talaba2)
+
+d = matem.talabalar_soni
+print(d)
